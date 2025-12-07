@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sam</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <aside class="sidebar">
+            <div class="brand">Samcihuy</div>
+            <div class="small">Menggunakan Local Storage</div>
+
+            <nav class="nav" id="main-nav">
+                <a href="#/dashboard" data-route="#/dashboard">Dashboard</a>
+                <a href="#/home" data-route="#/home">Home</a>
+                <a href="#/add" data-route="#/add">Add</a>
+                <a href="#/setting" data-route="#/setting">Setting</a>
+                <a href="#/about" data-route="#/about">About</a>
+            </nav>
+
+            <div style="margin-top: auto;">
+                <div class="small">Note</div>
+                <div class="muted">Data disimpan di LocalStorage</div>
+            </div>
+        </aside>
+
+        <main class="content" id="view-root"></main>
+    </div>
+    <input type="file" id="csvFileInput" accept="csv,text/csv" style="display: none;">
+
+    <script src="script.js"></script>
+</body>
+</html>
